@@ -42,8 +42,8 @@
         }
         else {
           return {
-            title: decoded.name,
-            params: EptLogs.beautify(decoded.params)
+            title: EptLogs.beautifyTitle(decoded.name),
+            params: EptLogs.beautifyParams(decoded.params)
           };
         }
       };

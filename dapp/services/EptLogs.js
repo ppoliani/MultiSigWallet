@@ -62,10 +62,23 @@
         return param;
       }
 
-      factory.beautify = function(params) {
+      factory.beautifyParams = function(params) {
         return params.map((param) => {
           return beautifyParam(param);
         })
+      }
+
+      factory.beautifyTitle = function(title) {
+        switch(title) {
+          case 'addBeneficiary':
+            return 'Add new token vesting beneficiary';
+          case 'mint':
+            return 'Mint tokens';
+          case 'deploy':
+            return 'Deploy Vesting Contract';
+          default:
+            return title;
+        }
       }
 
       return factory;
