@@ -6,7 +6,7 @@
       $routeProvider
       .when("/wallets", {
         controller: 'walletCtrl',
-        templateUrl: 'partials/wallets.html'
+      templateUrl: 'partials/wallets.html'
       })
       .when("/transactions", {
         controller: 'transactionCtrl',

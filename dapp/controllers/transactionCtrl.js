@@ -8,6 +8,7 @@
       $scope.itemsPerPage = 10;
       $scope.wallets = Wallet.wallets;
 
+
       // Get Ethereum Chain
       Transaction.getEthereumChain().then(
         function (data) {
