@@ -12,6 +12,7 @@
   "main": "main.js",
   "scripts": {
     "test": "sh testrpc.sh",
+    "start:dev": "node_modules/.bin/grunt",
     "certs": "openssl req -x509 -sha256 -nodes -newkey rsa:2048 -days 365 -keyout localhost.key -out localhost.crt -subj '/CN=localhost/O=Multisig/C=US'",
     "dist": "zip -x node_modules/\\* -x npm-debug.log -x tests/\\* -x config.karma.js -x .DS_Store -x .gitignore -r ../multisigWallet.zip ./",
     "postinstall": "./node_modules/grunt/bin/grunt ngtemplates",
@@ -98,6 +99,7 @@
     "electron-packager": "^8.6.0",
     "electron-rebuild": "^1.7.2",
     "grunt": "^1.0.0",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^19.0.0",
