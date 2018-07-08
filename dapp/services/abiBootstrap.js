@@ -2,7 +2,7 @@
   function() {
     angular
     .module("multiSigWeb")
-    .service("abiBootstrap", function(ABI) {
+    .service("AbiBootstrap", function(ABI) {
       var factory = {};
       
       factory.load = function() {

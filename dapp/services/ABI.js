@@ -2,7 +2,7 @@
   function () {
     angular
     .module("multiSigWeb")
-    .service("ABI", function () {
+    .service("ABI", function (EptLogs) {
       var factory = {
         saved: JSON.parse(localStorage.getItem("abis")) || {},
       };
@@ -43,7 +43,7 @@
         else {
           return {
             title: decoded.name,
-            params: decoded.params
+            params: EptLogs.beautify(decoded.params)
           };
         }
       };
