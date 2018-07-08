@@ -1,4 +1,4 @@
-var TokenVestingFActoryAbi = [
+var TokenVestingFactoryAbi = [
   {
     "constant": false,
     "inputs": [],
